@@ -1,4 +1,4 @@
-.container{
+.container {
     max-width: 1440px;
     width: 100%;
     margin: auto;
@@ -6,7 +6,7 @@
 
 /* header */
 
-header{
+header {
     background-color: #372D23;
     display: flex;
     padding: 32px 80px;
@@ -20,42 +20,45 @@ header{
     top: 0;
     z-index: 1;
 }
-nav ul{
+
+nav ul {
     display: flex;
     column-gap: 48px;
 }
-nav li a{
+
+nav li a {
     color: #B89278;
     font-family: Inter;
     font-size: 24px;
     line-height: 32px;
 }
-.active{
+
+.active {
     color: #ED6C30;
 }
 
 /* section 1 */
 
-.section_1{
+.section_1 {
     height: 640px;
     position: relative;
-    padding-top: 130px;
+    margin-top: 130px;
 }
 
-.section_1 img{
+.section_1 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.section_1_center{
+.section_1_center {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.section_1 h2{
+.section_1 h2 {
     color: #FFF;
     text-shadow: 0px 6px 4px #372D23;
     font-family: Inter;
@@ -64,7 +67,7 @@ nav li a{
     line-height: 56px;
 }
 
-.section_1 button{
+.section_1 button {
     color: #FFF;
     background: transparent;
     border: 3px solid #FCC21B;
@@ -75,4 +78,75 @@ nav li a{
     line-height: 28px;
     padding: 12px 38px;
     margin-top: 32px;
+}
+
+/* section 2 */
+
+.section_2 {
+    display: flex;
+    padding: 80px 0;
+    justify-content: center;
+    column-gap: 40px;
+}
+
+.section_2 article{
+    width: 400px;
+    height: 320px;
+    position: relative;
+}
+
+.card_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card_bottom{
+    height: 88px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    column-gap: 16px;
+    background: rgba(55, 45, 35, 0.80);
+    backdrop-filter: blur(2px);
+}
+
+/* article */
+
+.article_main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+}
+.article_main h3{
+    color: #372D23;
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+}
+.article_main p{
+    width: 1060px;
+    color: #855C52;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    line-height: 28px;
+}
+.article_main button{
+    display: flex;
+    height: 52px;
+    padding: 12px 40px;
+    justify-content: center;
+    align-items: center;
+    background: #ED6C30;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
 }
